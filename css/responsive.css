@@ -1,0 +1,776 @@
+/*
+  ============================================
+  AL KHAYT Fashion Academy - Responsive.css
+    Developed by: 1442abhi
+  ============================================
+*/
+
+/* ========================================
+   LARGE TABLETS & SMALL DESKTOPS
+   (Max-width: 1200px)
+======================================== */
+@media (max-width: 1200px) {
+    html {
+        font-size: 58%; /* Slightly smaller base font */
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0 2.4rem;
+    }
+
+    /* Hero Section */
+    .hero-container {
+        gap: 4.8rem;
+    }
+
+    /* Courses Grid */
+    .courses-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.4rem;
+    }
+
+    /* About Features */
+    .about-features {
+        gap: 2rem;
+    }
+
+    /* Footer */
+    .footer-content {
+        gap: 3.2rem;
+    }
+}
+
+/* ========================================
+   TABLETS (LANDSCAPE & PORTRAIT)
+   (Max-width: 1024px)
+======================================== */
+@media (max-width: 1024px) {
+    html {
+        font-size: 56%;
+    }
+
+    /* Typography Adjustments */
+    h1 {
+        font-size: 5.2rem;
+    }
+
+    h2 {
+        font-size: 3.6rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 6.4rem 0;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 4.8rem;
+    }
+
+    .hero-image {
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+    }
+
+    /* About Section */
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 4.8rem;
+    }
+
+    .about-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Course Cards */
+    .course-card,
+    .course-card.reverse {
+        grid-template-columns: 1fr;
+        gap: 3.2rem;
+        padding: 3.2rem;
+    }
+
+    .course-card.reverse .course-images,
+    .course-card.reverse .course-content {
+        order: unset;
+    }
+
+    .course-images {
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+
+    /* Testimonials */
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+        gap: 2.4rem;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3.2rem;
+    }
+
+    .footer-content .footer-section:first-child {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+}
+
+/* ========================================
+   TABLETS (PORTRAIT)
+   (Max-width: 768px)
+======================================== */
+@media (max-width: 768px) {
+    html {
+        font-size: 54%;
+    }
+
+    .container {
+        padding: 0 2rem;
+    }
+
+    /* Typography */
+    h1 {
+        font-size: 4.4rem;
+    }
+
+    h2 {
+        font-size: 3.2rem;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+    }
+
+    /* Navigation - Mobile Menu Activation */
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 7.2rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        transition: left 0.3s ease;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+        padding: 2.4rem 0;
+        gap: 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        margin: 0;
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 1.6rem 2.4rem;
+        font-size: 1.8rem;
+    }
+
+    /* Hamburger Menu */
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .logo span {
+        font-size: 1.8rem;
+    }
+
+    .logo img {
+        height: 4rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 4.8rem 0;
+        min-height: auto;
+    }
+
+    .hero-title {
+        font-size: 4.4rem;
+    }
+
+    .hero-tagline {
+        font-size: 2rem;
+    }
+
+    .hero-description {
+        font-size: 1.6rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Section Spacing */
+    .about,
+    .courses-preview,
+    .courses-section,
+    .testimonials,
+    .cta {
+        padding: 6.4rem 0;
+    }
+
+    .section-header {
+        margin-bottom: 4.8rem;
+    }
+
+    /* Courses Grid */
+    .courses-grid {
+        grid-template-columns: 1fr;
+        gap: 2.4rem;
+    }
+
+    /* About Features */
+    .about-features {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* Course Images */
+    .course-images {
+        grid-template-columns: 1fr;
+    }
+
+    .course-images img {
+        height: 25rem;
+    }
+
+    /* Page Header */
+    .page-header {
+        padding: 4.8rem 0;
+    }
+
+    .page-header h1 {
+        font-size: 3.6rem;
+    }
+
+    /* Registration Form */
+    .form-container {
+        padding: 3.2rem;
+    }
+
+    .form-section h2 {
+        font-size: 2.4rem;
+    }
+
+    .checkbox-group {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    /* Rules Section */
+    .rule-item {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2.4rem;
+        text-align: center;
+    }
+
+    .rule-number {
+        margin: 0 auto;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 4.8rem 0 2.4rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 3.2rem;
+        text-align: center;
+    }
+
+    .footer-content .footer-section:first-child {
+        grid-column: auto;
+    }
+
+    /* CTA Section */
+    .cta-content h2 {
+        font-size: 3.2rem;
+    }
+
+    .cta-content p {
+        font-size: 1.8rem;
+    }
+}
+
+/* ========================================
+   MOBILE DEVICES (LARGE)
+   (Max-width: 576px)
+======================================== */
+@media (max-width: 576px) {
+    html {
+        font-size: 52%;
+    }
+
+    .container {
+        padding: 0 1.6rem;
+    }
+
+    /* Typography */
+    h1 {
+        font-size: 3.6rem;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+    }
+
+    /* Logo */
+    .logo span {
+        display: none; /* Hide text on very small screens */
+    }
+
+    .logo img {
+        height: 3.6rem;
+    }
+
+    /* Hero Section */
+    .hero-title {
+        font-size: 3.2rem;
+        line-height: 1.2;
+    }
+
+    .hero-tagline {
+        font-size: 1.8rem;
+    }
+
+    .hero-description {
+        font-size: 1.5rem;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 1.4rem 2.4rem;
+        font-size: 1.6rem;
+    }
+
+    .btn-large {
+        padding: 1.8rem 3.2rem;
+        font-size: 1.8rem;
+    }
+
+    /* Section Spacing */
+    .about,
+    .courses-preview,
+    .courses-section,
+    .testimonials,
+    .cta {
+        padding: 4.8rem 0;
+    }
+
+    .section-header {
+        margin-bottom: 3.2rem;
+    }
+
+    .section-header h2 {
+        font-size: 2.8rem;
+    }
+
+    .section-header p {
+        font-size: 1.6rem;
+    }
+
+    /* Feature Cards */
+    .feature-card {
+        padding: 2.4rem;
+    }
+
+    .feature-icon {
+        font-size: 3.6rem;
+    }
+
+    /* Course Cards */
+    .course-card {
+        margin-bottom: 4.8rem;
+        padding: 2.4rem;
+    }
+
+    .course-images img {
+        height: 20rem;
+    }
+
+    /* Testimonial Cards */
+    .testimonial-card {
+        padding: 2.4rem;
+    }
+
+    .testimonial-text {
+        font-size: 1.6rem;
+    }
+
+    /* Page Header */
+    .page-header {
+        padding: 3.2rem 0;
+    }
+
+    .page-header h1 {
+        font-size: 2.8rem;
+    }
+
+    .page-header p {
+        font-size: 1.6rem;
+    }
+
+    /* Registration Form */
+    .registration-section {
+        padding: 4.8rem 0;
+    }
+
+    .form-container {
+        padding: 2.4rem;
+    }
+
+    .registration-form {
+        gap: 3.2rem;
+    }
+
+    .form-section h2 {
+        font-size: 2.2rem;
+        margin-bottom: 2.4rem;
+    }
+
+    .form-group {
+        margin-bottom: 2rem;
+    }
+
+    .form-group label {
+        font-size: 1.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        font-size: 1.5rem;
+        padding: 1rem 1.4rem;
+    }
+
+    .checkbox-label {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    /* Rules Section */
+    .rule-item {
+        padding: 2rem;
+        margin-bottom: 3.2rem;
+    }
+
+    .rule-number {
+        width: 6rem;
+        height: 6rem;
+        font-size: 2.8rem;
+    }
+
+    .rule-text h3 {
+        font-size: 1.8rem;
+    }
+
+    .rule-text p {
+        font-size: 1.5rem;
+    }
+
+    .rules-footer {
+        padding: 3.2rem 2rem;
+    }
+
+    .rules-footer p {
+        font-size: 1.6rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 3.2rem 0 2rem;
+    }
+
+    .footer-content {
+        gap: 2.4rem;
+    }
+
+    .footer-section h3 {
+        font-size: 2rem;
+    }
+
+    .footer-section h4 {
+        font-size: 1.8rem;
+    }
+
+    .footer-section p,
+    .footer-section ul li a {
+        font-size: 1.5rem;
+    }
+
+    /* CTA Section */
+    .cta {
+        padding: 4.8rem 0;
+    }
+
+    .cta-content h2 {
+        font-size: 2.6rem;
+    }
+
+    .cta-content p {
+        font-size: 1.6rem;
+        margin-bottom: 2.4rem;
+    }
+}
+
+/* ========================================
+   MOBILE DEVICES (SMALL)
+   (Max-width: 375px)
+======================================== */
+@media (max-width: 375px) {
+    html {
+        font-size: 50%;
+    }
+
+    .container {
+        padding: 0 1.2rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 3.2rem 0;
+    }
+
+    .hero-title {
+        font-size: 2.8rem;
+    }
+
+    .hero-tagline {
+        font-size: 1.6rem;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 1.2rem 2rem;
+        font-size: 1.5rem;
+    }
+
+    .btn-large {
+        padding: 1.6rem 2.8rem;
+        font-size: 1.6rem;
+    }
+
+    /* Section Spacing */
+    .about,
+    .courses-preview,
+    .courses-section,
+    .testimonials,
+    .cta {
+        padding: 3.2rem 0;
+    }
+
+    /* Feature Cards */
+    .feature-card {
+        padding: 2rem;
+    }
+
+    .feature-icon {
+        font-size: 3.2rem;
+    }
+
+    /* Course Cards */
+    .course-card {
+        padding: 2rem;
+        margin-bottom: 3.2rem;
+    }
+
+    .course-images img {
+        height: 18rem;
+    }
+
+    /* Testimonial Cards */
+    .testimonial-card {
+        padding: 2rem;
+    }
+
+    /* Form Container */
+    .form-container {
+        padding: 2rem;
+    }
+
+    /* Rule Item */
+    .rule-item {
+        padding: 1.6rem;
+    }
+
+    .rule-number {
+        width: 5rem;
+        height: 5rem;
+        font-size: 2.4rem;
+    }
+
+    /* Footer */
+    .footer-content {
+        gap: 2rem;
+    }
+}
+
+/* ========================================
+   LANDSCAPE MODE ADJUSTMENTS
+   (All Mobile Devices in Landscape)
+======================================== */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 4rem 0;
+    }
+
+    .page-header {
+        padding: 3rem 0;
+    }
+
+    .nav-menu.active {
+        max-height: calc(100vh - 7.2rem);
+        overflow-y: auto;
+    }
+}
+
+/* ========================================
+   UTILITY CLASSES FOR RESPONSIVE IMAGES
+======================================== */
+@media (max-width: 768px) {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Ensure images don't break layout */
+    .hero-image img,
+    .course-images img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+/* ========================================
+   ACCESSIBILITY & TOUCH IMPROVEMENTS
+======================================== */
+@media (max-width: 768px) {
+    /* Larger touch targets for mobile */
+    .btn,
+    .nav-menu a,
+    .checkbox-label {
+        min-height: 4.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Better spacing for form elements */
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        min-height: 4.4rem;
+    }
+
+    /* Improved readability */
+    p {
+        line-height: 1.7;
+    }
+}
+
+/* ========================================
+   PRINT STYLES
+======================================== */
+@media print {
+    .navbar,
+    .hamburger,
+    .hero-buttons,
+    .btn,
+    .cta,
+    .footer {
+        display: none;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: #000;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+    }
+
+    img {
+        max-width: 100%;
+        page-break-inside: avoid;
+    }
+}
+
+/* ========================================
+   HIGH RESOLUTION DISPLAYS
+======================================== */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Sharper borders and shadows for retina displays */
+    .btn,
+    .feature-card,
+    .course-card,
+    .testimonial-card {
+        border-width: 0.5px;
+    }
+}
+
+/* ========================================
+   DARK MODE SUPPORT (Optional Enhancement)
+======================================== */
+@media (prefers-color-scheme: dark) {
+    /* Add dark mode styles here if needed in future */
+    /* This is prepared for future implementation */
+}
+
+/* ========================================
+   REDUCED MOTION FOR ACCESSIBILITY
+======================================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
