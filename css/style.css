@@ -15,7 +15,8 @@
 }
 
 html {
-    font-size: 62.5%; /* 1rem = 10px */
+    font-size: 62.5%;
+    /* 1rem = 10px */
     scroll-behavior: smooth;
 }
 
@@ -31,7 +32,12 @@ body {
 /* ========================================
    TYPOGRAPHY SYSTEM
 ======================================== */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
     line-height: 1.05;
     letter-spacing: -0.05px;
@@ -110,7 +116,7 @@ a {
 }
 
 .logo img {
-    height: 5rem;
+    height: 8rem;
     width: auto;
 }
 
@@ -175,22 +181,26 @@ a {
 .hero-title {
     font-size: 6.2rem;
     color: #45260a;
-    margin-bottom: 1.6rem;
+    margin-bottom: 2rem;
+    line-height: 1.1;
+    letter-spacing: -1px;
 }
 
 .hero-tagline {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     font-style: italic;
     color: #6f6f6f;
     margin-bottom: 2.4rem;
-    letter-spacing: 0.75px;
+    letter-spacing: 0.5px;
+    font-weight: 300;
 }
 
 .hero-description {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #555;
-    margin-bottom: 3.2rem;
-    line-height: 1.6;
+    margin-bottom: 4rem;
+    line-height: 1.8;
+    max-width: 54rem;
 }
 
 .hero-buttons {
@@ -226,6 +236,7 @@ a {
 .btn-primary {
     background-color: #DCD0FF;
     color: #45260a;
+    border: 2px solid #45260a;
 }
 
 .btn-primary:hover {
@@ -370,6 +381,7 @@ a {
     color: #777;
     margin-bottom: 0;
 }
+
 /* ========================================
    TESTIMONIALS SECTION (NEW)
 ======================================== */
@@ -429,6 +441,7 @@ a {
     font-size: 1.4rem;
     color: #999;
 }
+
 /* ========================================
    CTA SECTION
 ======================================== */
@@ -790,4 +803,3 @@ a {
     font-size: 1.4rem;
     color: #c6bbe6;
 }
-

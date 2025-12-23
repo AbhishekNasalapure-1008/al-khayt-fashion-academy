@@ -11,7 +11,8 @@
 ======================================== */
 @media (max-width: 1200px) {
     html {
-        font-size: 58%; /* Slightly smaller base font */
+        font-size: 58%;
+        /* Slightly smaller base font */
     }
 
     .container {
@@ -69,6 +70,18 @@
         gap: 4.8rem;
     }
 
+    .hero-content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .hero-image {
         max-width: 60rem;
         margin: 0 auto;
@@ -76,6 +89,7 @@
 
     .hero-buttons {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     /* About Section */
@@ -201,7 +215,7 @@
     }
 
     .logo img {
-        height: 4rem;
+        height: 6rem;
     }
 
     /* Hero Section */
@@ -211,25 +225,30 @@
     }
 
     .hero-title {
-        font-size: 4.4rem;
+        font-size: 5rem;
+        line-height: 1.1;
     }
 
     .hero-tagline {
-        font-size: 2rem;
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
     }
 
     .hero-description {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
     .hero-buttons {
-        flex-direction: column;
+        flex-direction: row;
         gap: 1.2rem;
     }
 
     .hero-buttons .btn {
-        width: 100%;
+        flex: 1;
         text-align: center;
+        width: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     /* Section Spacing */
@@ -258,10 +277,6 @@
     }
 
     /* Course Images */
-    .course-images {
-        grid-template-columns: 1fr;
-    }
-
     .course-images img {
         height: 25rem;
     }
@@ -358,31 +373,38 @@
 
     /* Logo */
     .logo span {
-        display: none; /* Hide text on very small screens */
+        display: none;
+        /* Hide text on very small screens */
     }
 
     .logo img {
-        height: 3.6rem;
+        height: 5.5rem;
     }
 
     /* Hero Section */
+    /* Hero Section */
     .hero-title {
-        font-size: 3.2rem;
-        line-height: 1.2;
+        font-size: 4rem;
+        line-height: 1.1;
+        margin-bottom: 1.2rem;
     }
 
     .hero-tagline {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .hero-description {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 
     /* Buttons */
     .btn {
         padding: 1.4rem 2.4rem;
         font-size: 1.6rem;
+    }
+
+    .hero-buttons .btn {
+        padding: 1.2rem 0.5rem;
     }
 
     .btn-large {
@@ -688,6 +710,7 @@
    ACCESSIBILITY & TOUCH IMPROVEMENTS
 ======================================== */
 @media (max-width: 768px) {
+
     /* Larger touch targets for mobile */
     .btn,
     .nav-menu a,
@@ -715,6 +738,7 @@
    PRINT STYLES
 ======================================== */
 @media print {
+
     .navbar,
     .hamburger,
     .hero-buttons,
@@ -730,7 +754,12 @@
         color: #000;
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         page-break-after: avoid;
     }
 
@@ -743,9 +772,11 @@
 /* ========================================
    HIGH RESOLUTION DISPLAYS
 ======================================== */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+
     /* Sharper borders and shadows for retina displays */
-    .btn,
+    /* Sharper borders and shadows for retina displays */
     .feature-card,
     .course-card,
     .testimonial-card {
@@ -765,6 +796,7 @@
    REDUCED MOTION FOR ACCESSIBILITY
 ======================================== */
 @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {

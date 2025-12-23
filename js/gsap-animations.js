@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, "-=0.5")
         .from(".hero-buttons .btn", {
             y: 20,
-            opacity: 0,
+            // opacity: 0,
             duration: 0.6,
             stagger: 0.2
         }, "-=0.4")
